@@ -1,0 +1,517 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww34360\viewh19060\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+* \{\
+  margin: 0;\
+  padding: 0;\
+  box-sizing: border-box;\
+\}\
+\
+html \{\
+  scroll-behavior: smooth;\
+\}\
+\
+body \{\
+  font-family: Arial, Helvetica, sans-serif;\
+  background: #ffffff;\
+  color: #171717;\
+  line-height: 1.6;\
+\}\
+\
+a \{\
+  color: inherit;\
+  text-decoration: none;\
+\}\
+\
+.header \{\
+  width: 100%;\
+  min-height: 75px;\
+  padding: 18px 9%;\
+  display: flex;\
+  align-items: center;\
+  justify-content: space-between;\
+  background: #ffffff;\
+  border-bottom: 1px solid #eeeeee;\
+  position: sticky;\
+  top: 0;\
+  z-index: 100;\
+\}\
+\
+.logo \{\
+  font-family: Georgia, serif;\
+  font-size: 23px;\
+  font-weight: bold;\
+\}\
+\
+.logo span,\
+.hero h1 span \{\
+  color: #888888;\
+\}\
+\
+.header nav \{\
+  display: flex;\
+  gap: 30px;\
+\}\
+\
+.header nav a \{\
+  font-size: 13px;\
+  color: #444444;\
+  transition: 0.3s;\
+\}\
+\
+.header nav a:hover \{\
+  color: #999999;\
+\}\
+\
+.menu-btn \{\
+  display: none;\
+  background: none;\
+  border: none;\
+  font-size: 25px;\
+  cursor: pointer;\
+\}\
+\
+.section \{\
+  padding: 90px 12%;\
+\}\
+\
+.hero \{\
+  min-height: 520px;\
+  display: grid;\
+  grid-template-columns: 1.1fr 0.9fr;\
+  align-items: center;\
+  gap: 60px;\
+\}\
+\
+.eyebrow \{\
+  font-size: 11px;\
+  letter-spacing: 3px;\
+  font-weight: bold;\
+  color: #777777;\
+  margin-bottom: 15px;\
+\}\
+\
+.hero h1 \{\
+  font-family: Georgia, serif;\
+  font-size: clamp(55px, 7vw, 90px);\
+  line-height: 1.05;\
+  letter-spacing: -3px;\
+\}\
+\
+.hero h2 \{\
+  font-size: 22px;\
+  font-weight: 500;\
+  margin: 20px 0;\
+\}\
+\
+.hero-description \{\
+  max-width: 430px;\
+  color: #666666;\
+  margin-bottom: 30px;\
+\}\
+\
+.primary-btn \{\
+  display: inline-block;\
+  background: #171717;\
+  color: #ffffff;\
+  padding: 13px 24px;\
+  border-radius: 4px;\
+  font-size: 13px;\
+  transition: 0.3s;\
+\}\
+\
+.primary-btn:hover \{\
+  background: #555555;\
+  transform: translateY(-2px);\
+\}\
+\
+.hero-image \{\
+  height: 390px;\
+  overflow: hidden;\
+  background: #eeeeee;\
+  border-radius: 4px;\
+\}\
+\
+.hero-image img \{\
+  width: 100%;\
+  height: 100%;\
+  object-fit: cover;\
+  object-position: center top;\
+  filter: grayscale(100%);\
+\}\
+\
+.section-heading \{\
+  margin-bottom: 40px;\
+\}\
+\
+.section-heading h2 \{\
+  font-family: Georgia, serif;\
+  font-size: 38px;\
+  font-weight: normal;\
+  letter-spacing: -1px;\
+\}\
+\
+.about-grid \{\
+  display: grid;\
+  grid-template-columns: 1fr 1fr;\
+  gap: 70px;\
+  align-items: center;\
+\}\
+\
+.about-text h3 \{\
+  font-size: 23px;\
+  margin-bottom: 20px;\
+  max-width: 450px;\
+\}\
+\
+.about-text p \{\
+  color: #666666;\
+  margin-bottom: 17px;\
+\}\
+\
+.about-image \{\
+  height: 280px;\
+  overflow: hidden;\
+  border-radius: 5px;\
+  background: #eeeeee;\
+\}\
+\
+.about-image img \{\
+  width: 100%;\
+  height: 100%;\
+  object-fit: cover;\
+  filter: grayscale(100%);\
+\}\
+\
+.skills \{\
+  background: #fafafa;\
+\}\
+\
+.skills-grid \{\
+  display: grid;\
+  grid-template-columns: repeat(4, 1fr);\
+  gap: 18px;\
+\}\
+\
+.skill-card \{\
+  min-height: 125px;\
+  display: flex;\
+  flex-direction: column;\
+  align-items: center;\
+  justify-content: center;\
+  gap: 12px;\
+  background: #ffffff;\
+  border: 1px solid #eeeeee;\
+  border-radius: 6px;\
+  transition: 0.3s;\
+\}\
+\
+.skill-card:hover \{\
+  transform: translateY(-5px);\
+  box-shadow: 0 8px 25px #0000000d;\
+\}\
+\
+.skill-card i \{\
+  font-size: 38px;\
+  /* Keep the original brand colours */\
+\}\
+\
+.skill-card span \{\
+  font-size: 13px;\
+\}\
+\
+.expertise \{\
+  display: flex;\
+  flex-wrap: wrap;\
+  gap: 12px;\
+  margin-top: 30px;\
+\}\
+\
+.expertise span \{\
+  border: 1px solid #dddddd;\
+  padding: 8px 15px;\
+  border-radius: 30px;\
+  font-size: 12px;\
+  color: #555555;\
+\}\
+\
+.project-heading \{\
+  display: flex;\
+  justify-content: space-between;\
+  align-items: end;\
+\}\
+\
+.project-note \{\
+  font-size: 13px;\
+  color: #777777;\
+  margin-bottom: 8px;\
+\}\
+\
+.project-grid \{\
+  display: grid;\
+  grid-template-columns: repeat(3, 1fr);\
+  gap: 28px;\
+\}\
+\
+.project-card \{\
+  background: #ffffff;\
+  border: 1px solid #eeeeee;\
+  border-radius: 6px;\
+  overflow: hidden;\
+  transition: 0.3s;\
+\}\
+\
+.project-card:hover \{\
+  transform: translateY(-5px);\
+  box-shadow: 0 12px 30px #00000010;\
+\}\
+\
+.project-card img \{\
+  width: 100%;\
+  height: 190px;\
+  object-fit: cover;\
+  display: block;\
+  filter: grayscale(100%);\
+\}\
+\
+.project-info \{\
+  padding: 20px;\
+\}\
+\
+.project-info span \{\
+  color: #888888;\
+  font-size: 10px;\
+  letter-spacing: 1.5px;\
+\}\
+\
+.project-info h3 \{\
+  font-family: Georgia, serif;\
+  font-size: 20px;\
+  margin: 8px 0;\
+\}\
+\
+.project-info p \{\
+  color: #666666;\
+  font-size: 13px;\
+  margin-top: 7px;\
+\}\
+\
+.experience \{\
+  background: #fafafa;\
+\}\
+\
+.experience-grid \{\
+  display: grid;\
+  grid-template-columns: 1fr 1fr;\
+  gap: 70px;\
+\}\
+\
+.timeline \{\
+  border-left: 1px solid #cccccc;\
+  margin-left: 8px;\
+\}\
+\
+.timeline-item \{\
+  position: relative;\
+  padding: 0 0 35px 30px;\
+\}\
+\
+.timeline-dot \{\
+  position: absolute;\
+  left: -6px;\
+  top: 5px;\
+  width: 11px;\
+  height: 11px;\
+  border-radius: 50%;\
+  background: #171717;\
+\}\
+\
+.timeline-date \{\
+  font-size: 12px;\
+  color: #888888;\
+  margin-bottom: 8px;\
+\}\
+\
+.timeline-item h3,\
+.award-item h3 \{\
+  font-size: 17px;\
+  margin-bottom: 5px;\
+\}\
+\
+.timeline-item p \{\
+  color: #666666;\
+  font-size: 13px;\
+\}\
+\
+.awards \{\
+  display: flex;\
+  flex-direction: column;\
+  gap: 28px;\
+\}\
+\
+.award-item \{\
+  display: flex;\
+  gap: 20px;\
+  align-items: flex-start;\
+\}\
+\
+.award-icon \{\
+  width: 45px;\
+  height: 45px;\
+  display: grid;\
+  place-items: center;\
+  background: #eeeeee;\
+  border-radius: 5px;\
+  font-size: 24px;\
+\}\
+\
+.award-item p \{\
+  color: #666666;\
+  font-size: 13px;\
+\}\
+\
+.contact \{\
+  display: grid;\
+  grid-template-columns: 1fr 1fr;\
+  gap: 50px;\
+  align-items: center;\
+  background: #ffffff;\
+  border-top: 1px solid #eeeeee;\
+\}\
+\
+.contact h2 \{\
+  font-family: Georgia, serif;\
+  font-size: 48px;\
+  line-height: 1.15;\
+  margin-bottom: 20px;\
+\}\
+\
+.contact-intro > p:last-child \{\
+  color: #666666;\
+\}\
+\
+.contact-details \{\
+  display: flex;\
+  flex-direction: column;\
+  gap: 20px;\
+\}\
+\
+.contact-details a \{\
+  font-size: 15px;\
+  transition: 0.3s;\
+\}\
+\
+.contact-details a:hover \{\
+  color: #888888;\
+\}\
+\
+.footer \{\
+  display: flex;\
+  justify-content: space-between;\
+  padding: 25px 12%;\
+  border-top: 1px solid #eeeeee;\
+  color: #888888;\
+  font-size: 12px;\
+\}\
+\
+/* TABLET */\
+@media (max-width: 900px) \{\
+  .section \{\
+    padding: 70px 7%;\
+  \}\
+\
+  .header \{\
+    padding: 18px 7%;\
+  \}\
+\
+  .header nav \{\
+    gap: 15px;\
+  \}\
+\
+  .project-grid \{\
+    grid-template-columns: repeat(2, 1fr);\
+  \}\
+\}\
+\
+/* MOBILE */\
+@media (max-width: 650px) \{\
+  .header \{\
+    min-height: 65px;\
+  \}\
+\
+  .menu-btn \{\
+    display: block;\
+  \}\
+\
+  .header nav \{\
+    display: none;\
+    position: absolute;\
+    top: 65px;\
+    left: 0;\
+    width: 100%;\
+    background: #ffffff;\
+    padding: 25px;\
+    flex-direction: column;\
+    border-bottom: 1px solid #eeeeee;\
+  \}\
+\
+  .header nav.active \{\
+    display: flex;\
+  \}\
+\
+  .hero,\
+  .about-grid,\
+  .experience-grid,\
+  .contact \{\
+    grid-template-columns: 1fr;\
+  \}\
+\
+  .hero \{\
+    gap: 35px;\
+    padding-top: 60px;\
+  \}\
+\
+  .hero-image \{\
+    height: 340px;\
+  \}\
+\
+  .section \{\
+    padding: 60px 7%;\
+  \}\
+\
+  .section-heading h2 \{\
+    font-size: 32px;\
+  \}\
+\
+  .skills-grid \{\
+    grid-template-columns: repeat(2, 1fr);\
+  \}\
+\
+  .project-grid \{\
+    grid-template-columns: 1fr;\
+  \}\
+\
+  .project-heading \{\
+    display: block;\
+  \}\
+\
+  .project-note \{\
+    margin-top: 10px;\
+  \}\
+\
+  .contact h2 \{\
+    font-size: 40px;\
+  \}\
+\
+  .footer \{\
+    padding: 25px 7%;\
+    flex-direction: column;\
+    gap: 10px;\
+  \}\
+\}\
+}
